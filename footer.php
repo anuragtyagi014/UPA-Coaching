@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,30 +12,32 @@
 
 namespace Kadence;
 
-if ( ! defined( 'ABSPATH' ) ) {
+
+if (!defined('ABSPATH')) {
 	exit;
 }
 
 /**
  * Hook for bottom of inner wrap.
  */
-do_action( 'kadence_after_content' );
+do_action('kadence_after_content');
 ?>
-	</div><!-- #inner-wrap -->
-	<?php
-	do_action( 'kadence_before_footer' );
-	/**
-	 * Kadence footer hook.
-	 *
-	 * @hooked Kadence/footer_markup - 10
-	 */
-	do_action( 'kadence_footer' );
+</div><!-- #inner-wrap -->
+<?php
+do_action('kadence_before_footer');
+/**
+ * Kadence footer hook.
+ *
+ * @hooked Kadence/footer_markup - 10
+ */
+do_action('kadence_footer');
 
-	do_action( 'kadence_after_footer' );
-	?>
+do_action('kadence_after_footer');
+?>
 </div><!-- #wrapper -->
-<?php do_action( 'kadence_after_wrapper' ); ?>
+<?php do_action('kadence_after_wrapper'); ?>
 
 <?php wp_footer(); ?>
 </body>
+
 </html>
