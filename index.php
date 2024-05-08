@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main archive template file
  *
@@ -7,16 +8,17 @@
 
 namespace Kadence;
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
 get_header();
 
-kadence()->print_styles( 'kadence-content' );
+
+kadence()->print_styles('kadence-content');
 /**
  * Hook for main archive content.
  */
-do_action( 'kadence_archive' );
+do_action('kadence_archive');
 
 get_footer();
